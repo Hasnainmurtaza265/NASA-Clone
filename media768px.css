@@ -1,0 +1,19 @@
+/* Mobile: Pure Vertical Stack */
+@media (max-width: 768px) {
+    .mercury-grid {
+        grid-template-columns: 1fr; /* 1 col layout */
+    }
+    
+    .right-stack {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+    
+    .main-feature, .center-gradient, .stack-card {
+        height: 350px;
+    }
+    
+    .main-feature h3 {
+        font-size: 1.6rem;
+    }
+}

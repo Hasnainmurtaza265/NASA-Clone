@@ -1,0 +1,13 @@
+/* Responsive */
+@media (max-width: 1024px) {
+    .nav-links, .search-container { display: none; }
+    .hero-content h1 { font-size: 3rem; }
+}
+
+
+
+
+
+
+
+

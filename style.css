@@ -1,86 +1,425 @@
-* {}
-
-
-/* ==========NAV BAR========== */
-
-
-.navbar {
-    width: 100%;
-    height: 99px;
-    border: 2px solid black;
-    /* background-color: black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Zero Farq Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.navmaindiv {
-    width: 1220px;
-    /* padding: 20px; */
-    height: 67px;
-    border: 2px solid black;
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar Layout */
+.nasa-navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 10px 40px;
+    background-color: #000;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.navdiv1 {
-    width: 442px;
-    height: 49px;
-    border: 2px solid black;
+/* Left Section */
+.nav-left {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    /* color: white; */
+    gap: 20px;
 }
 
-.explore-div {
-    border: 2px solid black;
-    width: 128px;
-    height: 49px;
+.explore-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
     display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-container input {
+    background: transparent;
+    border: 1px solid #444;
+    padding: 8px 15px;
+    color: #fff;
+    width: 250px;
+    outline: none;
+}
+
+/* Center Section */
+.main-logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+/* Right Section */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.live-tag {
+    background-color: transparent;
+    border: 1px solid #e03c31;
+    color: #e03c31;
+    padding: 1px 4px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    background: url('https://www.nasa.gov/wp-content/uploads/2023/07/stsci-01h44ayj6m6msh36be8d6691sm.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 20%, transparent 80%);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.btn-cta {
+    background-color: #e03c31;
+    /* NASA Red-Orange */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #ff4538;
+}
+
+/* Hero Bottom Links Section */
+.hero-bottom-links {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+    padding: 40px 5%;
+    margin-top: -200px;
+    /* Hero section ke upar overlap karne ke liye */
+    position: relative;
+    z-index: 10;
+}
+
+.mission-info p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.btn-crew {
+    background-color: #e03c31;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+/* 3-Column Links Layout */
+.links-container {
+    display: flex;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    /* border: 2px solid white; */
+    height: 100px;
+}
+
+.link-item {
+    flex: 1;
+    padding: 0 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.link-item:last-child {
+    border-right: none;
+}
+
+.link-item .label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.link-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow {
+    background: #e03c31;
+    color: white;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    border-radius: 50%;
+    font-size: 0.9rem;
 }
 
-.search-div {
-    border: 2px solid black;
-    width: 298px;
+/* Featured News Section Style */
+.featured-news-header {
+    background-color: #fff;
+    color: #000;
+    padding: 80px 5% 40px 5%;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.featured-news-header h2 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.recent-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-circle {
+    background: #e03c31;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Hero Controls Layout */
+.hero-controls {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.circle-thumb {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: url('https://www.nasa.gov/wp-content/uploads/2024/01/iss-view.jpg') center/cover;
+}
+
+.pause-btn {
+    width: 40px;
     height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
-
-}
-
-.nav-search {
-    width: 200px;
-    height: 32px;
-}
-
-.nav-logo {
-    border: 2px solid black;
-    width: 177px;
-    height: 54px;
-}
-
-.nav-items {
-    border: 2px solid black;
-    width: 550px;
-    height: 55px;
-}
-
-.navitem-div1 {
-    border: 2px solid black;
-    width: 164px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.nav-item1 {
-    width: 125px;
-    height: 35px;
-    /* color: white; */
+/* --- NASA Mercury Grid Section Styling --- */
+.nasa-mercury-grid-section {
+    background-color: #fff;
+    /* Purana white transition container */
+    padding: 0 5% 80px 5%;
+    /* Top 0, sides 5%, bottom 80px */
 }
+
+.mercury-grid {
+    display: grid;
+    /* Desktop layout: 3 unequal columns */
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* --- Common Card Styling (Zero Farq Logic) --- */
+.card {
+    position: relative;
+    border-radius: 8px;
+    /* Clean edges, but not fully round */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Text bottom pe align karne ke liye */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 70%);
+    color: #fff;
+}
+
+/* Card Header (Blog, Article tags) */
+.card-header {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: auto;
+    /* Aligns tag to top, content to bottom */
+    padding-top: 5px;
+}
+
+.card-meta {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #adadad;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* --- Specific Card Styles --- */
+
+/* 1. Main Feature (Dominates left side) */
+.main-feature {
+    height: 600px;
+    /* Base height for desktop */
+}
+
+.main-feature h3 {
+    font-size: 2rem;
+    /* Big title for main story */
+}
+
+/* 2. Center Gradient Card (No Image, just gradient) */
+.center-gradient {
+    height: 600px;
+    background: linear-gradient(135deg, #161616, #800000 70%, #000);
+    /* Dark Red-ish gradient */
+    color: white;
+}
+
+.center-gradient .card-overlay {
+    background: transparent;
+    /* Overlay ki zaroorat nahi */
+}
+
+/* 3. Right Stack */
+.right-stack {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* Two equal stacked cards */
+    gap: 20px;
+    height: 600px;
+    /* Matches height of main feature */
+}
+
+.stack-card {
+    height: 290px;
+    /* Approximate height per card */
+}
+
+.stack-card h3 {
+    font-size: 1.2rem;
+}
+
+/* Special Case: News Release with solid BG overlay on image */
+.stack-card.img-bg .card-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    /* Pure dark overlay to show white text clearly */
+}
+
+/* --- Pixel Perfect Responsiveness --- */

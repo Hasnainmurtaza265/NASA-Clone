@@ -4,63 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NASA - Unveiling the Cosmos</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./media320px.css">
+    <link rel="stylesheet" href="./media768px.css">
+    <link rel="stylesheet" href="./media1024px.css">
+    <link rel="stylesheet" href="./media1100px.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="navmaindiv">
-            <div class="navdiv1">
-                <div class="explore-div">
-                    <h2 class="nav-explore">Explore</h2>
-                </div>
-                <div class="search-div">
-                    <input type="text" placeholder="Search" class="nav-search">
-                </div>
-
+    <nav class="nasa-navbar">
+        <div class="nav-left">
+            <button class="explore-btn">
+                Explore <span>⌵</span>
+            </button>
+            <div class="search-container">
+                <input type="text" placeholder="Search">
             </div>
+        </div>
 
-            <div class="nav-logo">
+        <div class="nav-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Meatball"
+                class="main-logo">
+        </div>
 
-            </div>
-
-            <div class="nav-items">
-                <div class="navitem-div1">
-                    <!-- <h1>News & Events</h1> -->
-                     <select name="" id="" class="nav-item1">
-                        <option value="" class="">News & Events</option>
-                     </select>
-                </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#">News & Events <span>⌵</span></a></li>
+                <li><a href="#">Multimedia <span>⌵</span></a></li>
+                <li><a href="#">NASA+ <span class="live-tag">LIVE</span></a></li>
+            </ul>
         </div>
     </nav>
 
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>Unveiling the Cosmos</h1>
+                <p>
+                    Launching no earlier than September 2026, NASA's Nancy Grace Roman Space Telescope
+                    will open an entirely new window on the universe. With its wide field of view
+                    and rapid survey speed, Roman will uncover countless cosmic objects and shed
+                    new light on dark matter and dark energy.
+                </p>
+                <button class="btn-cta">Roman Telescope</button>
+            </div>
+        </div>
+
+
+        <div class="links-container">
+            <div class="link-item">
+                <span class="label">YOUR ORBITING LABORATORY</span>
+                <a href="#">Space Station Updates <span class="arrow">→</span></a>
+            </div>
+            <div class="link-item">
+                <span class="label">CURRENT MISSION</span>
+                <a href="#">Expedition 74 <span class="arrow">→</span></a>
+            </div>
+            <div class="link-item">
+                <span class="label">BENEFITS FOR HUMANITY</span>
+                <a href="#">Space Station Science <span class="arrow">→</span></a>
+            </div>
+        </div>
+
+        <div class="hero-controls">
+            <div class="circle-thumb"></div>
+            <div class="pause-btn">||</div>
+        </div>
+        </section>
+
+
+        <section class="featured-news-header">
+        <div class="section-container">
+            <h2>Featured News</h2>
+            <a href="#" class="recent-link">Recently Published <span class="arrow-circle">→</span></a>
+        </div>
+    </section>
 
 
 
@@ -70,6 +92,82 @@
 
 
 
+
+        <section class="nasa-mercury-grid-section">
+            <div class="mercury-grid">
+
+                <article class="card main-feature">
+                    <div class="card-image">
+                        <img src="https://www.nasa.gov/wp-content/uploads/2024/03/artemis-hardware.jpg"
+                            alt="Artemis Hardware">
+                    </div>
+                    <div class="card-overlay">
+                        <div class="card-header">
+                            <span class="icon-blog">▣</span> BLOG
+                        </div>
+                        <div class="card-meta">4 MIN READ</div>
+                        <h3>NASA's Artemis III Moon Rocket Hardware Arrives, Artemis II Capsule Returns to Kennedy</h3>
+                    </div>
+                </article>
+
+                <article class="card center-gradient">
+                    <div class="card-overlay">
+                        <div class="card-header">
+                            <span class="icon-article">📰</span> ARTICLE
+                        </div>
+                        <div class="card-meta">5 MIN READ</div>
+                        <h3>NASA Fires Up Powerful Lithium-Fed Thruster for Trips to Mars</h3>
+                    </div>
+                </article>
+
+                <div class="right-stack">
+                    <article class="card stack-card img-bg">
+                        <div class="card-image">
+                            <img src="https://www.nasa.gov/wp-content/uploads/2024/03/anil-menon.jpg"
+                                alt="Astronaut Menon">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-header">
+                                <span class="icon-release">📢</span> NEWS RELEASE
+                            </div>
+                            <div class="card-meta">3 MIN READ</div>
+                            <h3>NASA Astronaut Anil Menon to Discuss Upcoming Launch, Mission</h3>
+                        </div>
+                    </article>
+
+                    <article class="card stack-card">
+                        <div class="card-image">
+                            <img src="https://www.nasa.gov/wp-content/uploads/2024/01/laser-terminal.jpg"
+                                alt="Laser Terminal">
+                        </div>
+                        <div class="card-overlay">
+                            <div class="card-header">
+                                <span class="icon-article">📰</span> ARTICLE
+                            </div>
+                            <div class="card-meta">4 MIN READ</div>
+                            <h3>NASA Laser Terminal Enhances Views During Artemis II Mission</h3>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
 
 </body>
 
