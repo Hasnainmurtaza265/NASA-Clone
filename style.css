@@ -182,7 +182,8 @@ body {
 /* --- Grid System --- */
 .mercury-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Exact ratio of image_0f11d6.jpg */
+    grid-template-columns: 2fr 1fr 1fr;
+    /* Exact ratio of image_0f11d6.jpg */
     gap: 20px;
     max-width: 1400px;
     margin: 0 auto;
@@ -192,7 +193,8 @@ body {
     position: relative;
     border-radius: 4px;
     overflow: hidden;
-    height: 550px; /* Fixed height for desktop alignment */
+    height: 550px;
+    /* Fixed height for desktop alignment */
     background: #000;
 }
 
@@ -214,7 +216,7 @@ body {
     left: 0;
     width: 100%;
     padding: 25px;
-    background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 20%, transparent);
     color: #fff;
     height: 100%;
     display: flex;
@@ -226,7 +228,8 @@ body {
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 1.5px;
-    margin-bottom: auto; /* Tag at the top */
+    margin-bottom: auto;
+    /* Tag at the top */
     display: flex;
     align-items: center;
     gap: 8px;
@@ -255,28 +258,220 @@ body {
 }
 
 .small-card {
-    height: calc(275px - 10px); /* Split the 550px height */
+    height: calc(275px - 10px);
+    /* Split the 550px height */
 }
 
 .small-card h3 {
     font-size: 1.1rem;
 }
 
-/* --- Mobile Responsiveness --- */
-@media (max-width: 1100px) {
-    .mercury-grid {
-        grid-template-columns: 1fr 1fr; /* 2-column layout for tablets */
-    }
-    .big-card { grid-column: span 2; }
-    .stack-column { flex-direction: row; grid-column: span 2; }
-    .small-card { flex: 1; height: 350px; }
+
+
+
+.circle-news-section {
+    background-color: #ffffff;
+    padding: 40px 5%;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-@media (max-width: 768px) {
-    .mercury-grid {
-        grid-template-columns: 1fr; /* Single column for mobile */
-    }
-    .big-card, .med-card, .stack-column { grid-column: span 1; }
-    .stack-column { flex-direction: column; }
-    .card, .small-card { height: 400px; }
+.circle-grid {
+    display: grid;
+    /* Desktop: 4 items side by side */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
+.circle-item {
+    display: flex;
+    align-items: flex-start;
+    /* Image aur text ko top se align rakhta hai */
+    gap: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.circle-item:hover {
+    transform: translateY(-3px);
+}
+
+/* --- Circle Image Styling --- */
+.circle-img-container {
+    flex-shrink: 0;
+    /* Image ko chota hone se rokta hai */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* Perfect Circle */
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.circle-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Text Content --- */
+.circle-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.read-time {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.circle-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Max 3 lines of text */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.meta-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+}
+
+.meta-tag span {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+/* --- Nebula Section Styling --- */
+.nebula-section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    /* Screenshot ke mutabiq kafi height hai */
+    display: flex;
+    align-items: center;
+    /* Vertical center alignment */
+    padding: 80px 8%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Background Image Layer */
+.nebula-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.nebula-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+    /* Darker look for text readability */
+}
+
+/* Content Box */
+.nebula-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    /* Text ko left side par control karne ke liye */
+    color: #ffffff;
+}
+
+/* Title (Humans in Space style bold typography) */
+.nebula-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    /* Scalable size */
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 30px;
+    letter-spacing: -1.5px;
+}
+
+/* Description text */
+.nebula-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #e0e0e0;
+    font-weight: 400;
+}
+
+/* Link with Arrow Icon */
+.nebula-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: opacity 0.3s ease;
+}
+
+.nebula-link:hover {
+    opacity: 0.8;
+}
+
+.arrow-circle {
+    background-color: #e03c31;
+    /* NASA Red */
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

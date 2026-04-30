@@ -1,0 +1,21 @@
+/* --- Mobile Responsiveness --- */
+@media (max-width: 1100px) {
+    .mercury-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2-column layout for tablets */
+    }
+
+    .big-card {
+        grid-column: span 2;
+    }
+
+    .stack-column {
+        flex-direction: row;
+        grid-column: span 2;
+    }
+
+    .small-card {
+        flex: 1;
+        height: 350px;
+    }
+}

@@ -1,5 +1,28 @@
 /* Responsive */
 @media (max-width: 1024px) {
-    .nav-links, .search-container { display: none; }
-    .hero-content h1 { font-size: 3rem; }
+
+    .nav-links,
+    .search-container {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+
+
+
+    .circle-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+    .nebula-section {
+        min-height: 60vh;
+        padding: 60px 5%;
+    }
+    .nebula-title {
+        font-size: 3.5rem;
+    }
 }

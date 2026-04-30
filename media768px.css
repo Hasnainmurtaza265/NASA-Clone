@@ -1,0 +1,22 @@
+
+@media (max-width: 768px) {
+    .mercury-grid {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+    }
+
+    .big-card,
+    .med-card,
+    .stack-column {
+        grid-column: span 1;
+    }
+
+    .stack-column {
+        flex-direction: column;
+    }
+
+    .card,
+    .small-card {
+        height: 400px;
+    }
+}

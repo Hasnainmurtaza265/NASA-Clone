@@ -1,0 +1,30 @@
+
+/* Mobile: 1 item per row */
+@media (max-width: 600px) {
+    .circle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .circle-img-container {
+        width: 80px;
+        /* Thoda chota circle mobile par */
+        height: 80px;
+    }
+
+    .circle-content h4 {
+        font-size: 0.95rem;
+    }
+
+
+    
+    .nebula-section {
+        align-items: flex-end; /* Mobile par text niche ki taraf shift */
+        padding-bottom: 60px;
+    }
+    .nebula-title {
+        font-size: 2.5rem;
+    }
+    .nebula-description {
+        font-size: 1rem;
+    }
+}
