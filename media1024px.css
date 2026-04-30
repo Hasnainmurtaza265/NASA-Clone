@@ -25,4 +25,49 @@
     .nebula-title {
         font-size: 3.5rem;
     }
+
+    
+    .universe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .iotd-container {
+        flex-direction: column; /* Stack vertically */
+        gap: 40px;
+    }
+    .iotd-main-title {
+        margin-bottom: 30px;
+    }
+
+
+    
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+
+    .freedom-container {
+        flex-direction: column;
+    }
+    .freedom-title {
+        font-size: 2.8rem;
+    }
+
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr); /* Tablet par 2 per line */
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .branding { grid-column: span 2; }
 }
+
+
+
+
+

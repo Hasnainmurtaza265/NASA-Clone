@@ -27,4 +27,42 @@
     .nebula-description {
         font-size: 1rem;
     }
+
+
+
+   
+    .universe-grid {
+        grid-template-columns: 1fr;
+    }
+    .universe-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .universe-card {
+        height: 350px;
+    }
+
+  
+    .iotd-main-title {
+        font-size: 3rem;
+    }
+    .iotd-sub-title {
+        font-size: 1.3rem;
+    }
+    .iotd-desc {
+        font-size: 1rem;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr; /* Mobile par 1 per line */
+    }
+    .topic-card {
+        height: 300px;
+    }
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+    .branding { grid-column: span 1; }
 }
+

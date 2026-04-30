@@ -19,4 +19,17 @@
     .small-card {
         height: 400px;
     }
+
+
+   
+    .newsletter-section {
+        min-height: 60vh;
+        padding: 40px 5%;
+    }
+    .newsletter-title {
+        font-size: 2.8rem;
+    }
+    .newsletter-text {
+        font-size: 1.1rem;
+    }
 }

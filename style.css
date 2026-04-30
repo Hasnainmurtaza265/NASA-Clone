@@ -475,3 +475,770 @@ body {
 
 
 
+/* --- Universe Section Styling --- */
+.universe-section {
+    background-color: #ffffff;
+    padding: 80px 5%;
+    color: #000000;
+}
+
+.universe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.universe-header h2 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.discover-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- Grid Layout (4 Columns) --- */
+.universe-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.universe-card {
+    position: relative;
+    height: 450px;
+    /* Vertical aspect ratio like screenshot */
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #000;
+}
+
+.universe-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.4s ease;
+}
+
+.universe-card:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Card Overlay Content --- */
+.uni-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    display: flex;
+    align-items: flex-end;
+    /* Text bottom pe rakhta hai */
+    justify-content: space-between;
+    /* Title left, Arrow right */
+    color: white;
+}
+
+.uni-card-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    max-width: 70%;
+    /* Arrow ke liye jagah chhodna */
+}
+
+.uni-arrow {
+    background-color: #e03c31;
+    /* NASA Red */
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+
+
+
+
+/* --- Image Of The Day --- */
+.iotd-section {
+    background-color: #ffffff;
+    padding: 100px 5%;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.iotd-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px; /* Space between text and image */
+    align-items: flex-start;
+}
+
+/* Left Side */
+.iotd-text-content {
+    flex: 1;
+}
+
+.iotd-date {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.iotd-main-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 60px;
+    letter-spacing: -2px;
+}
+
+.iotd-sub-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.iotd-desc {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.iotd-browse {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Right Side */
+.iotd-image-wrapper {
+    flex: 2; /* Image area is larger */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* View image link ko right align karne ke liye */
+}
+
+.iotd-image-container {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.iotd-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Download Button Overlay */
+.download-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #1e4188; /* NASA Blue for download */
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.view-image-link {
+    margin-top: 15px;
+}
+
+.view-image-link a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow-red {
+    background-color: #e03c31;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nasa-gallery-section {
+    background-color: #ffffff;
+    padding: 60px 5%;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.gallery-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+/* --- Main Grid Layout --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    cursor: pointer;
+}
+
+/* --- Composite Image Layout (The "Trick") --- */
+.composite-img {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Badi image 2 hisse, side stack 1 hissa */
+    gap: 4px; /* Image ke beech ka patla gap */
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+
+.main-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.side-stack {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Do barabar vertical images */
+    gap: 4px;
+    border: 2px solid black;
+}
+
+.side-stack img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- Info Text --- */
+.gallery-info h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.gallery-info .meta {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* --- Newsletter Section Styling --- */
+.newsletter-section {
+    position: relative;
+    width: 100%;
+    min-height: 85vh; /* Large height as seen in screenshot */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    padding: 60px 8%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+/* Background Image Overlay */
+.newsletter-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.newsletter-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Text ko highlight karne ke liye thoda dark */
+}
+
+/* Content Container */
+.newsletter-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px; /* Text width control */
+    color: #ffffff;
+}
+
+/* Main Heading */
+.newsletter-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 30px;
+    letter-spacing: -2px;
+}
+
+/* Description Text */
+.newsletter-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Privacy Note */
+.privacy-note {
+    font-size: 0.95rem;
+    color: #cccccc;
+    margin-bottom: 40px;
+}
+
+.privacy-note a {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Sign Up Button */
+.signup-btn {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.signup-btn:hover {
+    transform: translateX(10px); /* Halka sa right move on hover */
+}
+
+.signup-btn .arrow-circle {
+    background-color: #e03c31; /* Signature NASA Red */
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+
+
+
+/* ============BIRTHDAY CELEBRATION=========== */
+
+.freedom-section {
+    background-color: #f5f5f5; /* Light grey background from screenshot */
+    padding: 80px 5%;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.freedom-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Left Content */
+.freedom-text {
+    flex: 1;
+}
+
+.freedom-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.freedom-title {
+    font-size: clamp(2.5rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.freedom-tagline {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.freedom-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 35px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.arrow-red {
+    background-color: #e03c31;
+    color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+/* Right Side Image & Caption */
+.freedom-image-side {
+    flex: 1;
+}
+
+.freedom-img-container {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.freedom-img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.image-caption .credit {
+    display: block;
+    margin-top: 8px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+
+
+/* ==========MORE TOPICS FROM NASA STYLES ==========  */
+
+.topics-section {
+    background-color: #ffffff;
+    padding: 60px 5%;
+}
+
+.topics-header h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+.topics-grid {
+    display: grid;
+    /* 4 columns upar aur automatic rows niche */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.topic-card {
+    position: relative;
+    height: 400px; /* Vertical aspect ratio */
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #000;
+}
+
+.topic-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: transform 0.5s ease;
+}
+
+.topic-card:hover img {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+/* Overlay for Title and Arrow */
+.topic-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+}
+
+.topic-overlay h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.topic-arrow {
+    background-color: #e03c31; /* NASA Red */
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+
+/* ==========    FOOTER   ==========  */
+
+.nasa-footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 5% 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Branding Column */
+.footer-logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.branding h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.branding p {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-link {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.join-us {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Links Columns */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.live-tag {
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Socials Column */
+.socials p {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.social-icons .icon {
+    width: 35px;
+    height: 35px;
+    background: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.social-text-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Bottom Section */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 60px 0 30px;
+}
+
+.sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sitemap a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.footer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.footer-meta strong {
+    color: #bbb;
+}
+
+
+
+
+
+
+
