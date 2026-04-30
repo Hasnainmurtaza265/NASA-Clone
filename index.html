@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA - Unveiling the Cosmos</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./media320px.css">
-    <link rel="stylesheet" href="./media768px.css">
-    <link rel="stylesheet" href="./media1024px.css">
-    <link rel="stylesheet" href="./media1100px.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media1024px.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <nav class="nasa-navbar">
@@ -27,8 +21,7 @@
         </div>
 
         <div class="nav-center">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Meatball"
-                class="main-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Meatball" class="main-logo">
         </div>
 
         <div class="nav-right">
@@ -45,130 +38,80 @@
             <div class="hero-content">
                 <h1>Unveiling the Cosmos</h1>
                 <p>
-                    Launching no earlier than September 2026, NASA's Nancy Grace Roman Space Telescope
-                    will open an entirely new window on the universe. With its wide field of view
-                    and rapid survey speed, Roman will uncover countless cosmic objects and shed
+                    Launching no earlier than September 2026, NASA's Nancy Grace Roman Space Telescope 
+                    will open an entirely new window on the universe. With its wide field of view 
+                    and rapid survey speed, Roman will uncover countless cosmic objects and shed 
                     new light on dark matter and dark energy.
                 </p>
                 <button class="btn-cta">Roman Telescope</button>
             </div>
         </div>
-
-
-        <div class="links-container">
-            <div class="link-item">
-                <span class="label">YOUR ORBITING LABORATORY</span>
-                <a href="#">Space Station Updates <span class="arrow">→</span></a>
-            </div>
-            <div class="link-item">
-                <span class="label">CURRENT MISSION</span>
-                <a href="#">Expedition 74 <span class="arrow">→</span></a>
-            </div>
-            <div class="link-item">
-                <span class="label">BENEFITS FOR HUMANITY</span>
-                <a href="#">Space Station Science <span class="arrow">→</span></a>
-            </div>
-        </div>
-
-        <div class="hero-controls">
-            <div class="circle-thumb"></div>
-            <div class="pause-btn">||</div>
-        </div>
-        </section>
-
-
-        <section class="featured-news-header">
-        <div class="section-container">
-            <h2>Featured News</h2>
-            <a href="#" class="recent-link">Recently Published <span class="arrow-circle">→</span></a>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-        <section class="nasa-mercury-grid-section">
-            <div class="mercury-grid">
-
-                <article class="card main-feature">
-                    <div class="card-image">
-                        <img src="https://www.nasa.gov/wp-content/uploads/2024/03/artemis-hardware.jpg"
-                            alt="Artemis Hardware">
-                    </div>
-                    <div class="card-overlay">
-                        <div class="card-header">
-                            <span class="icon-blog">▣</span> BLOG
-                        </div>
-                        <div class="card-meta">4 MIN READ</div>
-                        <h3>NASA's Artemis III Moon Rocket Hardware Arrives, Artemis II Capsule Returns to Kennedy</h3>
-                    </div>
-                </article>
-
-                <article class="card center-gradient">
-                    <div class="card-overlay">
-                        <div class="card-header">
-                            <span class="icon-article">📰</span> ARTICLE
-                        </div>
-                        <div class="card-meta">5 MIN READ</div>
-                        <h3>NASA Fires Up Powerful Lithium-Fed Thruster for Trips to Mars</h3>
-                    </div>
-                </article>
-
-                <div class="right-stack">
-                    <article class="card stack-card img-bg">
-                        <div class="card-image">
-                            <img src="https://www.nasa.gov/wp-content/uploads/2024/03/anil-menon.jpg"
-                                alt="Astronaut Menon">
-                        </div>
-                        <div class="card-overlay">
-                            <div class="card-header">
-                                <span class="icon-release">📢</span> NEWS RELEASE
-                            </div>
-                            <div class="card-meta">3 MIN READ</div>
-                            <h3>NASA Astronaut Anil Menon to Discuss Upcoming Launch, Mission</h3>
-                        </div>
-                    </article>
-
-                    <article class="card stack-card">
-                        <div class="card-image">
-                            <img src="https://www.nasa.gov/wp-content/uploads/2024/01/laser-terminal.jpg"
-                                alt="Laser Terminal">
-                        </div>
-                        <div class="card-overlay">
-                            <div class="card-header">
-                                <span class="icon-article">📰</span> ARTICLE
-                            </div>
-                            <div class="card-meta">4 MIN READ</div>
-                            <h3>NASA Laser Terminal Enhances Views During Artemis II Mission</h3>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-        </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </header>
 
-</body>
+<!-- ==========FEATURED NEWS========= -->
 
+
+
+<section class="news-container">
+    <div class="news-header">
+        <h2>Featured News</h2>
+        <a href="#" class="recent-link">Recently Published <span class="arrow-icon">→</span></a>
+    </div>
+
+    <div class="mercury-grid">
+        <!-- 1. Left Feature Card (Spans 2 columns) -->
+        <article class="card big-card">
+            <div class="card-img">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/03/artemis-hardware.jpg" alt="Artemis III">
+            </div>
+            <div class="card-content">
+                <div class="card-tag"><span class="icon">▣</span> BLOG</div>
+                <div class="card-meta">4 MIN READ</div>
+                <h3>NASA's Artemis III Moon Rocket Hardware Arrives, Artemis II Capsule Returns to Kennedy</h3>
+            </div>
+        </article>
+
+        <!-- 2. Middle Card (Spans 1 column) -->
+        <article class="card med-card">
+            <div class="card-img">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/01/iss-science.jpg" alt="ISS Science">
+            </div>
+            <div class="card-content">
+                <div class="card-tag"><span class="icon">▣</span> BLOG</div>
+                <div class="card-meta">3 MIN READ</div>
+                <h3>Quantum Physics, Biomedicine, and Computer Gear Fill Wednesday's Schedule</h3>
+            </div>
+        </article>
+
+        <!-- 3. Right Stacked Cards -->
+        <div class="stack-column">
+            <!-- Small Card 1 -->
+            <article class="card small-card">
+                <div class="card-img">
+                    <img src="https://www.nasa.gov/wp-content/uploads/2024/03/anil-menon.jpg" alt="Boeing Research">
+                </div>
+                <div class="card-content">
+                    <div class="card-tag"><span class="icon">▣</span> IMAGE ARTICLE</div>
+                    <div class="card-meta">3 MIN READ</div>
+                    <h3>NASA, Boeing Advance Truss-Braced Wing Research in Test</h3>
+                </div>
+            </article>
+
+            <!-- Small Card 2 -->
+            <article class="card small-card">
+                <div class="card-img">
+                    <img src="https://www.nasa.gov/wp-content/uploads/2024/01/laser-terminal.jpg" alt="Landsat">
+                </div>
+                <div class="card-content">
+                    <div class="card-tag"><span class="icon">▣</span> ARTICLE</div>
+                    <div class="card-meta">7 MIN READ</div>
+                    <h3>Nighttime Imaging Grows Landsat's Science Value</h3>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+</body>
 </html>
