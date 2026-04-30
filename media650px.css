@@ -2,6 +2,7 @@
     .gallery-grid {
         grid-template-columns: 1fr;
     }
+
     .gallery-header h2 {
         font-size: 2rem;
     }

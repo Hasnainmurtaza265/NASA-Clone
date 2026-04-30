@@ -1,4 +1,3 @@
-
 /* Mobile: 1 item per row */
 @media (max-width: 600px) {
     .circle-grid {
@@ -16,53 +15,65 @@
     }
 
 
-    
+
     .nebula-section {
-        align-items: flex-end; /* Mobile par text niche ki taraf shift */
+        align-items: flex-end;
+        /* Mobile par text niche ki taraf shift */
         padding-bottom: 60px;
     }
+
     .nebula-title {
         font-size: 2.5rem;
     }
+
     .nebula-description {
         font-size: 1rem;
     }
 
 
 
-   
+
     .universe-grid {
         grid-template-columns: 1fr;
     }
+
     .universe-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
+
     .universe-card {
         height: 350px;
     }
 
-  
+
     .iotd-main-title {
         font-size: 3rem;
     }
+
     .iotd-sub-title {
         font-size: 1.3rem;
     }
+
     .iotd-desc {
         font-size: 1rem;
     }
 
     .topics-grid {
-        grid-template-columns: 1fr; /* Mobile par 1 per line */
+        grid-template-columns: 1fr;
+        /* Mobile par 1 per line */
     }
+
     .topic-card {
         height: 300px;
     }
+
     .footer-main {
         grid-template-columns: 1fr;
     }
-    .branding { grid-column: span 1; }
-}
 
+    .branding {
+        grid-column: span 1;
+    }
+}
