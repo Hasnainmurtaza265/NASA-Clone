@@ -307,7 +307,7 @@ body {
     border-radius: 50%;
     /* Perfect Circle */
     overflow: hidden;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .circle-img-container img {
@@ -449,27 +449,6 @@ body {
     justify-content: center;
     font-size: 0.9rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -706,25 +685,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .nasa-gallery-section {
     background-color: #ffffff;
     padding: 60px 5%;
@@ -760,7 +720,7 @@ body {
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 15px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .main-img img {
@@ -775,7 +735,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr; /* Do barabar vertical images */
     gap: 4px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .side-stack img {
